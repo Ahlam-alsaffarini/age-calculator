@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <!-- link font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- link css file -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Age calculator app</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="input">
+          <span class="day">
+            <label for="Day">Day</label>
+            <input
+              type="text"
+              name="Day"
+              id="Day"
+              placeholder="DD"
+              onkeyup="validDay()"
+            />
+            <span id="invalid-day"></span>
+          </span>
+          <span class="month">
+            <label for="Month">Month</label>
+            <input
+              type="text"
+              name="Month"
+              id="Month"
+              placeholder="MM"
+              onkeyup="validMonth()"
+            />
+            <span id="invalid-month"></span>
+          </span>
+          <span class="year">
+            <label for="Year">Year</label>
+            <input
+              type="text"
+              name="Year"
+              id="Year"
+              placeholder="YYYY"
+              onkeyup="validYear()"
+            />
+            <span id="invalid-year"></span>
+          </span>
+        </div>
+        <div class="middle">
+          <hr />
+          <img src="assets/images/icon-arrow.svg" alt="icon" class="submit" />
+        </div>
+        <div class="output">
+          <div class="year-result">
+            <h1><span>--</span>years</h1>
+          </div>
+          <div class="month-result">
+            <h1><span>--</span>months</h1>
+          </div>
+          <div class="day-result">
+            <h1><span>--</span>days</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
