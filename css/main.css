@@ -54,7 +54,7 @@ body {
 
 @media (min-width: 768px) {
   .container {
-    padding: 30px;
+    padding: 30px 40px;
     gap: 0px;
     border-bottom-right-radius: 240px;
   }
@@ -75,7 +75,7 @@ body {
   font-size: 17px;
   font-weight: 600;
   color: var(--Smokey-grey);
-  padding: 8px 0;
+  padding: 8px 4px;
 }
 
 .container .input input {
@@ -117,7 +117,7 @@ body {
   }
   .container .input span > span {
     font-size: 12px;
-    transform: translateY(-10px);
+    middle: translateY(-10px);
   }
 }
 .container .middle {
@@ -141,7 +141,7 @@ body {
   position: absolute;
   top: -38px;
   left: 50%;
-  transform: translateX(-50%);
+  margin-left: -35px;
   width: 70px;
   padding: 16px;
   cursor: pointer;
